@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
-import logo from '../../img/keepers-logo.png';
+import logo from '../../img/keepers.png';
 
 const Navigation = () => {
     return (

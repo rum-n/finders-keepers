@@ -8,6 +8,10 @@ footer {
     justify-content: space-between;
 }
 
+footer img {
+    width: 28%;
+}
+
 .footer-logo {
     margin-top: 2rem;
 }
