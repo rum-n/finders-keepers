@@ -1,0 +1,34 @@
+.compare-wrapper {
+    margin-top: 5rem;
+}
+
+.compare-wrapper table {
+    width: 100%;
+    background: #EEE5E9;
+    border-radius: 5px;
+    padding: 3rem 1rem 3rem;
+    font-size: 1rem;
+    margin-top: 4rem;
+    text-align: left;
+    /* border: 2px solid #6B818C; */
+}
+
+.compare-wrapper td {
+    padding: 0.5rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.compare-wrapper th {
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.table-item {
+    color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.table-finders {
+    color: #3A6174!important;
+    font-weight: 600;
+}

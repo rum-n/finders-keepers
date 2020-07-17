@@ -1,0 +1,45 @@
+.pricing-wrapper {
+    height: 60vh;
+    border-radius: 2%;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+}
+
+.pricing-wrapper h1 {
+    font-size: 2.5rem;
+}
+
+.pricing-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding: 3rem 0;
+}
+
+.pricing-options h2 {
+    font-size: 2.2rem;
+}
+
+.price-plan {
+    width: 20rem;
+    height: 17rem;
+    border: 4px solid #EEE5E9;
+    border-radius: 2%;
+    padding: 1rem;
+    box-shadow: 11px 8px 0px -4px #EEE5E9;
+}
+
+.price {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #3A6174;
+    margin: 0;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: black;
+}

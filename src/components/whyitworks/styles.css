@@ -1,0 +1,18 @@
+.third-screen p{
+    font-size: 1.3rem;
+    color: #6B818C;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.third-screen {
+    margin: 5rem auto;
+    background: #EEE5E9;
+    border-radius: 1%;
+    padding: 3rem;    
+}
+
+.third-screen h1 {
+    margin-bottom: 2rem;
+    color: #08415C;
+}

@@ -1,0 +1,23 @@
+.second-screen {
+    margin-top: 5rem;
+}
+
+.process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.step {
+    width: 30%;
+    height: 15rem;
+    margin-top: 4rem;
+}
+
+.step h2 {
+    color: #3A6174;
+}
+
+.step img {
+    width: 60%;
+}

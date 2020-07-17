@@ -1,0 +1,36 @@
+footer {
+    width: 50%;
+    height: 7rem;
+    margin: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-top: 2rem;
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.credits {
+    margin-top: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #08415C;
+    opacity: 0.7;
+}
+
+footer a:hover,
+footer a:active,
+footer a.active {
+  opacity: 1;
+}
+
