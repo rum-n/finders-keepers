@@ -1,0 +1,48 @@
+.main-dashboard {
+    max-width: 60rem;
+    margin: 5rem auto 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-variant {
+    width: 22%;
+    height: 11rem;
+    color: white;
+    margin: 2rem 0.5rem;
+    text-align: center;
+    box-shadow: 10px 11px 14px -10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.project-variant img {
+    width: 4rem;
+}
+
+.project-variant:hover {
+    box-shadow: 10px 11px 17px -10px rgba(0,0,0,0.5);
+}
+
+.design-box {
+    background: #3A6174;
+}
+
+.dev-box {
+    background: #A9BCD0;
+}
+
+.marketing-box {
+    background: #6B818C;
+}
+
+.crypto-box {
+    background: #373F51;
+}

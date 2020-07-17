@@ -4,11 +4,14 @@ import Subheader from './../components/subheader/Subheader';
 import Why from './../components/whyitworks/Why';
 import Pricing from './../components/pricing/Pricing';
 import Compare from './../components/compare/Compare';
+import Navigation from './../components/nav/Nav';
 
 function Home() {
   return (
+    <React.Fragment>
+      <Navigation/>
     <div className='main'>
-        <h1 className='title'>Remote projects for <br/><span className='freelance'>freelancers and agencies</span>, <br/>delivered directly to you</h1>
+        <h1 className='title'>Remote projects for <br/><span className='freelance'>freelancers and agencies</span>, <br/><span className='delivered'>delivered directly to you</span></h1>
         <div className='button-wrapper'>
             <a href='https://finderskeepers.substack.com/'><button className='primary'>Get Started</button></a>
             <a href='#how'><button className='secondary'>See how it works</button></a>
@@ -20,6 +23,7 @@ function Home() {
         <Pricing/>
         <Compare/>
     </div>
+    </React.Fragment>
   )
 }
 
