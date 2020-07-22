@@ -41,20 +41,8 @@ nav {
     width: 12rem;
 }
 
-@media screen and (max-width: 1200px) {
-    ul button {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .menu li {
-        display: flex;
-    }
-    .menu {
-        margin-top: 4rem;
-    }
+@media screen and (max-width: 850px) {
     nav {
-        padding: 0;
+        display: none;
     }
 }

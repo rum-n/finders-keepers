@@ -21,3 +21,9 @@
 .step img {
     width: 60%;
 }
+
+@media screen and (max-width: 850px) {
+    .process {
+        flex-direction: column;
+    }
+}

@@ -31,3 +31,9 @@
 .alternative span {
     text-align: right;
 }
+
+@media screen and (max-width: 850px) {
+    .compare-wrapper {
+        flex-direction: column;
+    }
+}
