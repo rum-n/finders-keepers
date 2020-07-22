@@ -7,13 +7,13 @@ const Subheader = () => {
         <h1>The only thing between you and success <br/>is a predictable sales funnel.</h1>
         <div className='process'>
             <div className='step'>
-                <h2>Subscribe<br/> for free <br/>for our weekly newsletter</h2>
+                <h2>Subscribe for free <br/>and get access to our platform.</h2>
             </div>
             <div className='step'>
-                <h2>Get a list of curated remote projects you can apply for today</h2>
+                <h2>Browse remote projects you can apply for today</h2>
             </div>
             <div className='step'>
-                <h2>Contact the companies and close more projects</h2>
+                <h2>Reach out to companies, close more projects</h2>
             </div>
         </div>
     </div>

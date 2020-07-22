@@ -10,15 +10,15 @@ const Pricing = () => {
             <div className='pricing-options'>
                 <div className='price-plan'>
                 <h2>Monthly</h2>
-                <p className='price'><span>$129</span>$89</p>
-                <p><strong>Save 30%!</strong></p>
-                <a href='https://finderskeepers.substack.com/'><button>Try for free!</button></a>
+                <p className='price'><span>$95</span>$75</p>
+                <p><strong>Save 20%!</strong></p>
+                <a href='https://app.finderskeepers.pro/'><button>Try for free!</button></a>
                 </div>
                 <div className='price-plan'>
                 <h2>Yearly</h2>
-                <p className='price'><span>$1,290</span>$890</p>
-                <p><strong>Save 30%!</strong></p>
-                <a href='https://finderskeepers.substack.com/'><button>Try for free!</button></a>
+                <p className='price'><span>$950</span>$600</p>
+                <p><strong>Save 20% + get 4 months for free!</strong></p>
+                <a href='https://app.finderskeepers.pro/'><button>Try for free!</button></a>
                 </div>
             </div>
         </div>

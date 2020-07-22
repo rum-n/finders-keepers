@@ -13,7 +13,7 @@ function Home() {
     <div className='main'>
         <h1 className='title'>Remote projects for <br/><span className='freelance'>freelancers and agencies</span>, <br/><span className='delivered'>delivered directly to you</span></h1>
         <div className='button-wrapper'>
-            <a href='https://finderskeepers.substack.com/'><button className='primary'>Get Started</button></a>
+            <a href='https://app.finderskeepers.pro/'><button className='primary'>Get Started</button></a>
             <a href='#how'><button className='secondary'>See how it works</button></a>
         </div>
         <div id="scroll-down"><span className="arrow-down"></span>

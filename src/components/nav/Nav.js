@@ -17,7 +17,7 @@ const Navigation = () => {
                 <li><a href='#price'>Pricing</a></li>
             </ul>
         </nav>
-            <a href='https://finderskeepers.substack.com/'><button>Get Started</button></a>
+            <a href='https://app.finderskeepers.pro/'><button>Get Started</button></a>
     </header>
     )
 };
