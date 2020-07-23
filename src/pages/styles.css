@@ -71,7 +71,8 @@
         line-height: 2.5rem;
     }
     .main {
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .button-wrapper {
         flex-direction: column;

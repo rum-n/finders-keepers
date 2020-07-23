@@ -47,7 +47,7 @@
 @media screen and (max-width: 850px) {
     .pricing-options {
         flex-direction: column;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     .price-plan {
         width: 15rem;
