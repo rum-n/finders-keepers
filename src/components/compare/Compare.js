@@ -11,7 +11,7 @@ const Compare = () => {
                 <br/>
                 <img src={logo} alt='Finders/Keepers Logo'/>
                 <ul>
-                    <li>Cost: <strong>$89</strong></li>
+                    <li>Cost: <strong>$60</strong></li>
                     <li>Leads per month: <strong>~ 20 - 50</strong></li>
                     <li>Lead quality: <strong>exactly what you need</strong></li>
                     <li>Time until first lead: <strong>next week</strong></li>

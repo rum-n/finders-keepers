@@ -23,7 +23,7 @@
 
 .price-plan {
     width: 20rem;
-    height: 17rem;
+    height: auto;
     border: 4px solid #EEE5E9;
     border-radius: 2%;
     padding: 1rem;
