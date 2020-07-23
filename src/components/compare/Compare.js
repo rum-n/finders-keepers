@@ -5,7 +5,7 @@ import logo from './../../img/keepers.png';
 const Compare = () => {
     return (
         <div>
-            <h1>Compared with other <br/>ways to fill your sales funnel</h1>
+            <h1 className='compare-title'>Compared with other <br/>ways to fill your sales funnel</h1>
         <div className='compare-wrapper'>
             <div className='alternative'>
                 <br/>

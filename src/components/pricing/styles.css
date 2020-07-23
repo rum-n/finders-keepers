@@ -49,4 +49,7 @@
         flex-direction: column;
         margin-bottom: 3rem;
     }
+    .price-plan {
+        width: 15rem;
+    }
 }

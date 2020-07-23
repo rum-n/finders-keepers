@@ -17,8 +17,7 @@ function Home() {
             <a href='https://app.finderskeepers.pro/'><button className='primary'>Get Started for Free</button></a>
             <a href='#how'><button className='secondary'>See how it works</button></a>
         </div>
-        <div id="scroll-down"><span className="arrow-down"></span>
-    </div>
+        <div id="scroll-down"><span className="arrow-down"></span></div>
         <Subheader/>
         <Why/>
         <Pricing/>

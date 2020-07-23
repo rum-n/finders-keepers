@@ -36,4 +36,11 @@
     .compare-wrapper {
         flex-direction: column;
     }
+    .compare-title{
+        margin-top: 40rem;
+    }
+    .alternative {
+        
+        width: 90%;
+    }
 }
