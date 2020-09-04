@@ -6,7 +6,7 @@ import logo from '../../img/keepers.png';
 const DashboardNav = () => {
     return (
     <header>
-        <Link to='/'>
+        <Link to='/dashboard'>
             <div className='logo'>
                 <img src={logo} alt='Logo'/>
             </div>
