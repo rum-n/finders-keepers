@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './styles.css';
 import DashNav from './../../components/nav/DashboardNav';
 
-function WebDev() {
-    const url = 'https://app.finderskeepers.pro/ghost/api/v3/content/posts/?key=dcbd247e43dc938503593427ab&include=tags&limit=20&filter=tag:web-development';
+function UxUi() {
+    const url = 'https://app.finderskeepers.pro/ghost/api/v3/content/posts/?key=dcbd247e43dc938503593427ab&include=tags&limit=50&filter=tag:ux-ui-design';
     const [state, setState] = useState();
     
     const fetchPosts = async () => {
@@ -20,15 +19,11 @@ function WebDev() {
     let postsToRender;
     if (state) {
         postsToRender = state.posts.map(item => {
-        return <div className='job-wrapper' key={item.id}><Link to={`/${item.slug}`}>
-          <h2>{item.title}</h2>
-        <div>
-          <p>{item.excerpt}</p>
-        </div>
+        return <div className='job-wrapper' key={item.id}>{item.title}
           <div className='date'>
-            Last updated: {Date.parse(item.updated_at)}
+            Last updated: {item.updated_at}
           </div>
-          </Link></div>;
+        </div>;
       });
     } else {
         postsToRender = "Loading...";
@@ -38,12 +33,11 @@ function WebDev() {
   <React.Fragment>
       <DashNav/>
         <div className='main-dashboard'>
-            <h1>Web Development</h1>
-            <p>Projects for freelance contractors and small agencies</p>
+            <h1>UX & UI Design</h1>
             {postsToRender}
         </div>
     </React.Fragment>
   )
 }
 
-export default WebDev;
+export default UxUi;

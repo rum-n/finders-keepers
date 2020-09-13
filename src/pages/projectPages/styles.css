@@ -1,0 +1,26 @@
+.job-wrapper {
+    border: 1px solid #A9BCD0;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.job-wrapper:hover {
+    /* box-shadow: 6px 10px 5px -5px rgba(0,0,0,0.2);
+    transition-duration: 0.5s; */
+    box-shadow: 10px 11px 17px -10px rgba(0,0,0,0.2);
+    transition-duration: 0.4s;
+}
+
+.date {
+    margin-top: 1rem;
+    color: #A9BCD0;
+}
+
+.job-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+

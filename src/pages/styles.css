@@ -30,11 +30,13 @@
     cursor: pointer;
     font-weight: 600;
     text-transform: none;
+    transition-duration: 0.4s;
   }
   .primary:hover {
     box-shadow: 10px 11px 14px -10px rgba(0,0,0,0.2);
     background: #3A6174;
     border: 1px solid #3A6174;
+    transition-duration: 0.4s;
   }
 
 .secondary {
@@ -49,12 +51,14 @@
     font-weight: 600;
     margin-left: 1rem;
     text-transform: none;
+    transition-duration: 0.4s;
 }
 .secondary:hover {
     background: #6B818C;
     box-shadow: 10px 11px 14px -10px rgba(0,0,0,0.2);
     color: white;
     border: 1px solid #6B818C;
+    transition-duration: 0.4s;
 }
 
 .freelance {

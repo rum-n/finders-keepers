@@ -16,10 +16,12 @@ button {
   padding: 10px 15px;
   cursor: pointer;
   font-weight: 600;
+  transition-duration: 0.3s;
 }
 button:hover {
   background: #08415C;
   box-shadow: 10px 11px 14px -10px rgba(0,0,0,0.2);
   color: #EEE5E9;
   border: 1px solid #08415C;
+  transition-duration: 0.3s;
 }

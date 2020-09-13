@@ -8,6 +8,7 @@ header {
 .menu a{
     text-decoration: none;
     color: #6B818C;
+    transition-duration: 0.4s;
 }
 
 nav {
@@ -31,6 +32,7 @@ nav {
   .menu a:active,
   .menu a.active {
     color: #08415C;
+    transition-duration: 0.4s;
 }
 
 .logo {
