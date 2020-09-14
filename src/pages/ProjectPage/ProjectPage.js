@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DashNav from './../../components/nav/DashboardNav';
+import './styles.css';
 
 const ProjectPage = ({match}) => {
     const [state, setState] = useState({});
@@ -20,9 +21,7 @@ const ProjectPage = ({match}) => {
       <DashNav/>
         <div className='main-dashboard'>
             <h1>{state.title}</h1>
-            <div>
-                {state.plaintext}
-            </div>
+            <div className='post-body' dangerouslySetInnerHTML={{__html: state.html }}/>
         </div>
     </React.Fragment>
   )
