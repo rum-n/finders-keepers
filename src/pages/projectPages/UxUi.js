@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom';
 import DashNav from './../../components/nav/DashboardNav';
 
 function UxUi() {
@@ -19,11 +20,15 @@ function UxUi() {
     let postsToRender;
     if (state) {
         postsToRender = state.posts.map(item => {
-        return <div className='job-wrapper' key={item.id}>{item.title}
-          <div className='date'>
-            Last updated: {item.updated_at}
-          </div>
-        </div>;
+        return <div className='job-wrapper' key={item.id}><Link to={`/${item.slug}`}>
+        <h2>{item.title}</h2>
+      <div>
+        <p>{item.excerpt}</p>
+      </div>
+        <div className='date'>
+          Last updated: {Date.parse(item.updated_at)}
+        </div>
+        </Link></div>;
       });
     } else {
         postsToRender = "Loading...";

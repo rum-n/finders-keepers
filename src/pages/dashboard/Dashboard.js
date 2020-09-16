@@ -13,8 +13,7 @@ function Dashboard() {
   <React.Fragment>
       <DashNav/>
         <div className='main-dashboard'>
-            <h1>Welcome to your Dashboard!</h1>
-            <h2>What projects are you looking for today?</h2>
+            <h1>What projects are you looking for today?</h1>
             <div className='project-types'>
                 <Link to='./ux-ui-design'>
                 <div className='project-variant design-box'>
