@@ -5,41 +5,27 @@ import { Link } from 'react-router-dom';
 
 const ProjectPage = ({match}) => {
     const [state, setState] = useState({});
-    const [similarPosts, setSimilarPosts] = useState({});
+    const [similarPost, setSimilarPost] = useState([]);
+    const [tag, setTag] = useState('');
     
     const fetchPost = async () => {
-        const res = await fetch(`https://app.finderskeepers.pro/ghost/api/v3/content/posts/slug/${match.params.id}/?key=dcbd247e43dc938503593427ab&formats=html,plaintext`);
+        const res = await fetch(`https://app.finderskeepers.pro/ghost/api/v3/content/posts/slug/${match.params.id}/?key=dcbd247e43dc938503593427ab&formats=html,plaintext&include=tags`);
         const item = await res.json();
         setState(item.posts[0]);
+        console.log(item.posts[0]);
+        setTag(item.posts[0].primary_tag.slug);
     };
 
     const fetchSimilarPost = async () => {
-        const res = await fetch('https://app.finderskeepers.pro/ghost/api/v3/content/posts/?key=dcbd247e43dc938503593427ab&include=tags&limit=2&filter=tag:web-development');
+        const res = await fetch(`https://app.finderskeepers.pro/ghost/api/v3/content/posts/tags/${tag}/?key=dcbd247e43dc938503593427ab`);
         const item = await res.json();
-        setSimilarPosts(item);
+        setSimilarPost(item);
     };
 
     useEffect(()=> {
         fetchPost();
         fetchSimilarPost();
     },[])
-
-    let morePosts;
-    if (similarPosts) {
-        morePosts = similarPosts.posts.map(item => {
-        return <div key={item.id}><Link to={`/${item.slug}`}>
-          <h2>{item.title}</h2>
-        <div>
-          <p>{item.excerpt}</p>
-        </div>
-          <div className='date'>
-            Last updated: {Date.parse(item.updated_at)}
-          </div>
-          </Link></div>;
-      });
-    } else {
-        morePosts = "Loading...";
-    }
 
   return (
   <React.Fragment>
@@ -49,9 +35,9 @@ const ProjectPage = ({match}) => {
             <div className='post-body' dangerouslySetInnerHTML={{__html: state.html }}/>
             <div>
                 <hr/>
-                <p>Similar projects:</p>
+                <p>Similar project:</p>
                 <div className='similar-posts'>
-                    {morePosts}
+                    <h2>{similarPost.title}</h2>
                 </div>
             </div>
         </div>
