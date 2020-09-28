@@ -11,4 +11,14 @@
 .similar-posts {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
+}
+
+.similar-posts a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.back {
+    text-align: left;
 }
