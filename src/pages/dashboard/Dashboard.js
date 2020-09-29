@@ -40,7 +40,6 @@ function Dashboard() {
                 </div>
                 </Link>
             </div>
-            {/* <button>See all project</button>*/}
         </div>
     </React.Fragment>
   )

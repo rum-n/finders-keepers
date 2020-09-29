@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DashNav from './../../components/nav/DashboardNav';
 import './styles.css';
-import { Link } from 'react-router-dom';
+// import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 
 const ProjectPage = ({match}) => {
     const [state, setState] = useState({});
@@ -28,7 +28,6 @@ const ProjectPage = ({match}) => {
 
     useEffect(()=> {
         fetchPost();
-        // fetchSimilarPost();
     },[])
 
     // let backlink;
@@ -63,6 +62,7 @@ const ProjectPage = ({match}) => {
   <React.Fragment>
       <DashNav/>
         <div className='main-dashboard'>
+        {/* <Breadcrumbs/> */}
             <h1>{state.title}</h1>
             <div className='post-body' dangerouslySetInnerHTML={{__html: state.html }}/>
             <div>

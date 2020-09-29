@@ -14,10 +14,11 @@ const DashboardNav = () => {
         <nav>
             <ul className='menu'>
                 <li><a href='#how'>Resources</a></li>
-                <li><a href='#price'>Share a project</a></li>
+                <li><a href='#price'>Post a project</a></li>
+                <li><a href='#account'>Account</a></li>
             </ul>
         </nav>
-            <a href='https://finderskeepers.substack.com/'><button>Logout</button></a>
+            {/* <a href='https://finderskeepers.substack.com/'><button>Logout</button></a> */}
     </header>
     )
 };

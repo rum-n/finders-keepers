@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 import DashNav from './../../components/nav/DashboardNav';
+// import Breadcrumbs from './../../components/breadcrumbs/Breadcrumbs';
 
 function WebDev() {
     const url = 'https://app.finderskeepers.pro/ghost/api/v3/content/posts/?key=dcbd247e43dc938503593427ab&include=tags&limit=20&filter=tag:web-development';
@@ -38,6 +39,7 @@ function WebDev() {
   <React.Fragment>
       <DashNav/>
         <div className='main-dashboard'>
+        {/* <Breadcrumbs/> */}
             <h1>Web Development</h1>
             <p>Projects for freelance contractors and small agencies</p>
             {postsToRender}
